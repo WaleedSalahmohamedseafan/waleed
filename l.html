@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="l.css">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .container {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .input {
+            width: 100%;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border: 1px solid  #cccccc;
+            border-radius: 3px;
+        }
+
+        button {
+            width: 100%;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            background-color: blue;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 3px;
+        }
+
+        .forgot-password {
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+
+        .not-a-member {
+            font-size: 0.8em;
+        }
+
+        .or {
+            margin: 30px auto;
+            background-color: rgba(190, 190, 190, 0.667);
+            width: 20px;
+            height: auto;
+            border-radius: 100%;
+            font-size: 100%;
+           padding: 20px;
+           
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        .link-forgot {
+            margin-right: 50px;
+        }
+        .fb-btn{ 
+            background-color: rgb(0, 0, 255);
+            color: #ffffff;
+            padding: 10px;
+        }
+        .f-twitter{
+            background-color: aqua;
+            color: #fff;
+            margin-left: 10px;
+            padding: 10px;
+        }
+        .ro{
+            background-color: #ccc;
+        }
+          
+    
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="col">
+       <a href="#" class="fb-btn">
+        <i class="fa fa-facebook fa-fw"></i>Login With Facebook
+        <a href="https://www.facebook.com"></a>
+       </a>
+       <a href="#" class="f-twitter">
+        <i class="fa fa-twitter fa-fq"></i>Login With Twitter
+       </a>
+    </div>
+    
+    <div class="or">
+        Or
+    </div>
+   
+    <form action="/login" method="post">
+        <input type="email" name="email" placeholder="Email" class="input">
+        <input type="password" name="password" placeholder="Password" class="input">
+        <div class="forgot-password">
+            <input type="checkbox">
+            <a href="#" class="link-forgot">Forgot your password?</a>
+            <a href="#">keep me sing in</a>
+        </div>
+        <button type="submit">Login</button>
+        
+    </form>
+    <div class="not-a-member">
+        Not a member? <a href="#">Sign up now!</a>
+    </div>
+</div>
+
+   
+
+    
+</body>
+</html>
